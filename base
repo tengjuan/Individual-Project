@@ -1,0 +1,61 @@
+Enter file contents here
+Public class base{
+//没必要的方法调用，System.exit()是没有必要的，应该抛出异常
+Try{
+Int y=Integer . Parse Int (x.to Lower Case());
+Return y*y+””;
+}catch(Number Format  Exception e{
+     E.print Stack Trace();
+     System.exit(1);
+     Return””;
+}
+}
+//显示垃圾回收（缺陷）
+Public String multiply( String x,int n){
+     If(n<=0) return “”;
+     String Buffer bu f =new String Buffer();
+While(n-->0){
+bu f .append(x);
+}
+Return bu f.to String();
+}
+Public void connection(){ 
+   String filed=”齐鲁工业大学 201303014009 滕娟”；
+//this is bad
+   String s=”齐鲁工业大学 201303014009 滕娟”;
+//System.out .prints(s+’\n);//Stop1
+}
+
+Public void connection2(){
+   String filed=””；
+   //this is batter
+   String s=””;
+   String Buffer bu f =new String Buffer();
+   For(int i=0;i<filed.length();++i){
+       bu f.append(filed.char At(i));
+}
+
+ String s s =bu f.to String();
+System.out .prints(s s+’\n);//Stop2
+}
+Public static void main( String []  a r gs){
+ String h;
+Base pp=new base();
+h=pp.square(“100”);
+System.out .prints(h+”\n”);
+String s=”hello word!”;
+h=pp.multiply(s,2);
+//System.out .prints(h+”\n”);
+h=pp.multiply Gs(s,2);
+System.out .prints(h+”\n”);
+//以纳秒为单位计算的：
+Long start Time=System.n a no Time();//获取当前时间
+pp.connection();
+Long end Time=System.n a no Time();
+System.out .print l n (“程序运行时间：”+(end Time- start Time)+”ms”);
+Long start Tim2e=System.n a no Time();//获取当前时间
+Pp.connection2();
+Long end Time2=System.n a no Time();
+System.out .print l n (“程序运行时间：”+(end Time2- start Time2)+”ms”);
+}
+}
